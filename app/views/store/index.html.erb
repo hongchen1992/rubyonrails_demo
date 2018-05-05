@@ -4,7 +4,7 @@
 
 <h1>Your Pragmatic Catalog</h1>
 <% if @conter > 5 %>
-  <h2><%= @conter %><h2>
+  <h2><%= @conter %></h2>
 <% end %>
 
 
@@ -16,7 +16,6 @@
           <%= image_tag(product.image_url) %>
           <h2><%= product.title %></h2>
           <h2><%= product.product_id %></h2>
-          <!-- <h2>hahaha</h2> -->
           <p>
             <%= sanitize(product.description) %>
           </p>
