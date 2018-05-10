@@ -4,11 +4,6 @@
 
 <h1>Your Pragmatic Catalog</h1>
 
-<% if @conter > 5 %>
-  <h2><%= @conter %></h2>
-<% end %>
-
-
 <ul class="catalog">
   <% cache @products do %>
     <% @products.each do |product| %>
